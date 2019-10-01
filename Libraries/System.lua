@@ -14,8 +14,8 @@ local number = require("Number")
 
 local system = {}
 
-local iconImageWidth = 8
-local iconImageHeight = 4
+local iconImageWidth = 6
+local iconImageHeight = 3
 
 local bootUptime = computer.uptime()
 local dateUptime = bootUptime
@@ -85,7 +85,7 @@ function system.getDefaultUserSettings()
 		networkSignalStrength = 512,
 		networkFTPConnections = {},
 		
-		interfaceWallpaperEnabled = false,
+		interfaceWallpaperEnabled = true,
 		interfaceWallpaperPath = paths.system.pictures .. "Space.pic",
 		interfaceWallpaperMode = 1,
 		interfaceWallpaperBrightness = 0.9,
@@ -110,10 +110,10 @@ function system.getDefaultUserSettings()
 		filesShowHidden = false,
 		filesShowApplicationIcon = true,
 
-		iconWidth = 12,
-		iconHeight = 6,
-		iconHorizontalSpace = 1,
-		iconVerticalSpace = 1,
+		iconWidth = 6,
+		iconHeight = 3,
+		iconHorizontalSpace = 0.5,
+		iconVerticalSpace = 0.5,
 		
 		tasks = {},
 		dockShortcuts = {
